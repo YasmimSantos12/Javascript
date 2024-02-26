@@ -54,4 +54,18 @@ console.log(usuario.cpf)
 
 console.log(usuario['nome'])
 
+//metodo object assign
+//para o usuario 2 eu quero uma clonagem do usuario 1
+let estudante={
+    nome:"Yasmim",
+}
+let estudante2={}
+Object.assign(estudante2,estudante)
+console.log(estudante.nome)
+console.log(estudante2.nome)
+estudante2.nome="Maria"
+console.log("--------")
+console.log(estudante.nome)
+console.log(estudante2.nome)
+
 

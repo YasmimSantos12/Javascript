@@ -30,6 +30,7 @@ cliente.nome="Yasmim"
 cliente.cpf=63426498274
 cliente.origem="Xambioá"
 cliente.apresentar()
+console.log(cliente['nome'])
 
 let cliente2= new pessoa()
 cliente2.nome="Jessica"
@@ -41,14 +42,14 @@ function multiplicar(n1,n2){
     return n1*n2
 }
 
-for(let i=1;i<=10;i++){
+/*for(let i=1;i<=10;i++){
     for(let x=1;x<=10;x++){
         console.log(`${i} X ${x} = ${multiplicar(i,x)}`)
         if(x==10){
             console.log("-------------")
         }
     }
-}
+}*/
 
 let estudante={
     nome:"Yasmim",
@@ -79,3 +80,5 @@ let filme={
 for(key in filme){
     console.log(filme[key])
 }
+console.log(filme.nome)
+console.log(filme['lancamento'])
